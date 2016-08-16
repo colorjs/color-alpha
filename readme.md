@@ -8,3 +8,7 @@ Change alpha of a color without requiring huge color libs.
 const α = require('color-alpha');
 α('white', .4); // 'rgba(255,255,255,.4)'
 ```
+
+## Related
+
+> [color-interpolate](https://github.com/dfcreative/color-interpolate) — interpolate color over palette, colormap or gradient.
