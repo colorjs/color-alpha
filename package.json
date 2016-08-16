@@ -1,0 +1,33 @@
+{
+  "name": "color-alpha",
+  "version": "1.0.0",
+  "description": "Change alpha value of a color string",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfcreative/color-alpha.git"
+  },
+  "keywords": [
+    "color",
+    "alpha",
+    "opacity",
+    "css",
+    "css-color",
+    "color-space",
+    "color-parse",
+    "color-manipulate",
+    "channel"
+  ],
+  "author": "ΔY <dfcreative@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfcreative/color-alpha/issues"
+  },
+  "homepage": "https://github.com/dfcreative/color-alpha#readme",
+  "dependencies": {
+    "color-parse": "^1.2.0"
+  }
+}
