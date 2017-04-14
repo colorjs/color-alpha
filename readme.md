@@ -1,5 +1,7 @@
 # color-alpha
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/colorjs/color-alpha.svg)](https://greenkeeper.io/)
+
 Change alpha of a color without requiring huge color libs.
 
 [![npm install color-alpha](https://nodei.co/npm/color-alpha.png?mini=true)](https://npmjs.org/package/color-alpha/)
