@@ -11,4 +11,4 @@ const α = require('color-alpha');
 
 ## Related
 
-> [color-interpolate](https://github.com/dfcreative/color-interpolate) — interpolate color over palette, colormap or gradient.
+> [color-interpolate](https://github.com/dy/color-interpolate) — interpolate color over palette, colormap or gradient.
