@@ -1,4 +1,4 @@
-# color-alpha
+# color-alpha [![unstable](https://img.shields.io/badge/stability-unstable-green.svg)](http://github.com/badges/stability-badges) [![Build Status](https://travis-ci.org/colorjs/color-alpha.png)](https://travis-ci.org/colorjs/color-alpha)
 
 Change alpha of a color without requiring huge color libs.
 
