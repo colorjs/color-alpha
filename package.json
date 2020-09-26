@@ -1,6 +1,6 @@
 {
   "name": "color-alpha",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Change alpha value of a color string",
   "main": "index.js",
   "module": "./index.mjs",
