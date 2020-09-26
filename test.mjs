@@ -1,5 +1,5 @@
-const assert = require('assert');
-const α = require('./');
+import assert from 'assert';
+import α from './index.mjs';
 
 assert.equal(α('white', .1), 'rgba(255,255,255,0.1)');
 assert.equal(α('rgba(244,244,244, .3)', 1), 'rgba(244,244,244,1)');
