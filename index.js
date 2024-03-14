@@ -1,21 +1,14 @@
-'use strict'
-
 /**
  * @module  color-alpha
  */
-var parse = require('color-parse');
+import parse from 'color-parse';
 
-module.exports = alpha;
-
-function alpha (color, value) {
-	var obj = parse(color);
-
-	if (value == null) value = obj.alpha;
-
+export default function alpha(color, value) {
+	var { space, values, alpha } = parse(color);
 	//catch percent
-	if (obj.space[0] === 'h') {
-		return obj.space + ['a(', obj.values[0], ',', obj.values[1], '%,', obj.values[2], '%,', value, ')'].join('');
+	if (space[0] === 'h') {
+		return `${space}a(${values[0]}, ${values[1]}%, ${values[2]}%, ${value})`;
 	}
 
-	return obj.space + ['a(', obj.values, ',', value, ')'].join('');
+	return `${space}a(${values}, ${value})`;
 }
