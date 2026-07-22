@@ -2,7 +2,7 @@
 
 Change alpha of a color.
 
-[![npm install color-alpha](https://nodei.co/npm/color-alpha.png?mini=true)](https://npmjs.org/package/color-alpha/)
+`$ npm install color-alpha`
 
 ```js
 import α from 'color-alpha'
