@@ -1,4 +1,4 @@
-# color-alpha [![stable](https://img.shields.io/badge/stability-stable-green.svg)](http://github.com/badges/stability-badges) [![build](https://travis-ci.org/colorjs/color-alpha.png)](https://travis-ci.org/colorjs/color-alpha) [![size](https://img.shields.io/bundlephobia/minzip/color-parse?label=size)](https://bundlephobia.com/result?p=color-alpha)
+# color-alpha [![test](https://github.com/colorjs/color-alpha/actions/workflows/test.js.yml/badge.svg)](https://github.com/colorjs/color-alpha/actions/workflows/test.js.yml) [![size](https://img.shields.io/bundlephobia/minzip/color-alpha?label=size)](https://bundlephobia.com/result?p=color-alpha) ![stable](https://img.shields.io/badge/stability-stable-green)
 
 Change alpha of a color.
 
@@ -6,7 +6,9 @@ Change alpha of a color.
 
 ```js
 import α from 'color-alpha'
-α('white', .4); // 'rgba(255,255,255,.4)'
+α('white', .4); // 'rgba(255,255,255, 0.4)'
+α('oklch(0.628 0.258 29.234)', .3); // 'oklch(0.628 0.258 29.234 / 0.3)'
+α('rgba(244, 244, 244, .3)'); // 'rgba(244,244,244, 0.3)' — no alpha reads the color's own
 ```
 
-Input color is parsed with [color-parse](https://ghub.io/color-parse) package.
+Input color is parsed with [color-parse](https://ghub.io/color-parse): legacy `rgb`/`hsl` keep comma syntax, modern spaces (`lab`, `oklch`, `color(display-p3 …)` etc.) serialize with css slash syntax. Unparseable input returns `undefined`.

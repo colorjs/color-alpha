@@ -1,6 +1,6 @@
 {
   "name": "color-alpha",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Change alpha value of a color string",
   "main": "index.js",
   "browser": "index.js",
@@ -8,9 +8,15 @@
   "types": "./index.d.ts",
   "type": "module",
   "exports": {
-    "import": "./index.js",
-    "types": "./index.d.ts"
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
   },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "scripts": {
     "test": "node test.js"
   },
@@ -36,6 +42,6 @@
   },
   "homepage": "https://github.com/colorjs/color-alpha#readme",
   "dependencies": {
-    "color-parse": "^2.0.0"
+    "color-parse": "^2.1.0"
   }
 }
