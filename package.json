@@ -1,6 +1,6 @@
 {
   "name": "color-alpha",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Change alpha value of a color string",
   "main": "index.js",
   "browser": "index.js",
